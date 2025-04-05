@@ -1,18 +1,23 @@
 import SwiftUI
 
 struct HomeView: View {
-    var body: some View {
-      TabView {
-        FeedView()
-          .tabItem {
-            Image(systemName: "play.square.stack")
-            Text("Feed")
-          }
+  
+  @State private var buttonOffset: CGFloat = 0
+  
+  var body: some View {
+    ZStack {
+      Color.black
+      VStack (alignment: .center, spacing: 180){
+        Spacer()
+        LogoView()
+        Spacer()
+        CustomButtonView()
       }
-      .ignoresSafeArea()
     }
+    .ignoresSafeArea()
+  }
 }
-
+    
 #Preview {
-  HomeView()
-}
+      HomeView()
+    }
