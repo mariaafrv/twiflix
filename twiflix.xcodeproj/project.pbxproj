@@ -6,13 +6,30 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		E5FE521F2DA1B63000F5A885 /* YouTubePlayerKit in Frameworks */ = {isa = PBXBuildFile; productRef = E5FE521E2DA1B63000F5A885 /* YouTubePlayerKit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		E5FE51D62DA175AD00F5A885 /* twiflix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = twiflix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		E5FE521C2DA18E9300F5A885 /* Exceptions for "twiflix" folder in "twiflix" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = E5FE51D52DA175AD00F5A885 /* twiflix */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		E5FE51D82DA175AD00F5A885 /* twiflix */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				E5FE521C2DA18E9300F5A885 /* Exceptions for "twiflix" folder in "twiflix" target */,
+			);
 			path = twiflix;
 			sourceTree = "<group>";
 		};
@@ -23,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5FE521F2DA1B63000F5A885 /* YouTubePlayerKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +83,7 @@
 			);
 			name = twiflix;
 			packageProductDependencies = (
+				E5FE521E2DA1B63000F5A885 /* YouTubePlayerKit */,
 			);
 			productName = twiflix;
 			productReference = E5FE51D62DA175AD00F5A885 /* twiflix.app */;
@@ -94,6 +113,9 @@
 			);
 			mainGroup = E5FE51CD2DA175AD00F5A885;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				E5FE521D2DA1B63000F5A885 /* XCRemoteSwiftPackageReference "YouTubePlayerKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = E5FE51D72DA175AD00F5A885 /* Products */;
 			projectDirPath = "";
@@ -127,6 +149,8 @@
 /* Begin XCBuildConfiguration section */
 		E5FE51E32DA175AF00F5A885 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = E5FE51D82DA175AD00F5A885 /* twiflix */;
+			baseConfigurationReferenceRelativePath = Config.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -188,6 +212,8 @@
 		};
 		E5FE51E42DA175AF00F5A885 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = E5FE51D82DA175AD00F5A885 /* twiflix */;
+			baseConfigurationReferenceRelativePath = Config.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -252,6 +278,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = twiflix/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -291,6 +318,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = twiflix/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -339,6 +367,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E5FE521D2DA1B63000F5A885 /* XCRemoteSwiftPackageReference "YouTubePlayerKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SvenTiigi/YouTubePlayerKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E5FE521E2DA1B63000F5A885 /* YouTubePlayerKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E5FE521D2DA1B63000F5A885 /* XCRemoteSwiftPackageReference "YouTubePlayerKit" */;
+			productName = YouTubePlayerKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E5FE51CE2DA175AD00F5A885 /* Project object */;
 }

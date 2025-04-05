@@ -4,8 +4,12 @@ struct HomeView: View {
     var body: some View {
       TabView {
         FeedView()
+          .tabItem {
+            Image(systemName: "play.square.stack")
+            Text("Feed")
+          }
       }
-        .padding()
+      .ignoresSafeArea()
     }
 }
 

@@ -1,5 +1,5 @@
 import Foundation
 
-struct Playlist {
-  //code
+struct Playlist: Decodable {
+  var items: [Video]
 }
