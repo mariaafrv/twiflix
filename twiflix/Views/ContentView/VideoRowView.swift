@@ -5,6 +5,8 @@ struct VideoRowView: View {
   var video: Video
   
   var body: some View {
+    ZStack {
+      Color.black
       VStack {
         if let url = URL(string: video.snippet?.thumbnails?.medium?.url ?? "") {
           AsyncImage(url: url) { image in
@@ -18,8 +20,10 @@ struct VideoRowView: View {
         }
         Text(video.snippet?.title ?? "")
           .bold()
+          .foregroundStyle(Color(hex: "FFFFFF"))
       }
       .padding(.vertical)
+      .ignoresSafeArea()
     }
   }
-  
+}

@@ -4,7 +4,7 @@ import SwiftUI
 struct twiflixApp: App {
     var body: some Scene {
         WindowGroup {
-          HomeView()
+          ContentListView()
         }
     }
 }

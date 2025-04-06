@@ -3,10 +3,10 @@ import Foundation
 struct DataService {
   private let apiKey = Bundle.main.infoDictionary?["API_KEY"] as? String
   
-  func getVideos() async -> [Video] {
+  func getVideos(playlistId: String) async -> [Video] {
     guard apiKey != nil else { return [Video]() }
     
-    let urlString = "https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=PLyo6W3g1j4QZ2qB1uRi-x3A0xCcc1w-C1&maxResults=20&key=\(apiKey!)"
+    let urlString = "https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=\(playlistId)&maxResults=20&key=\(apiKey!)"
     let url = URL(string: urlString)
     
     if let url = url {
